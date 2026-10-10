@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore the history of web browsers, try a Wikipedia search and learn about HTML, CSS and JavaScript." name="description"/>
+<title>Web Technologies | History of the Web &amp; Browser Explorer</title>
+
+
+<!-- Bootstrap setup based on W3Schools: https://www.w3schools.com/bootstrap5/bootstrap_get_started.php --><link href="vendor/bootstrap.min.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+
+
+<script defer="True" src="vendor/bootstrap.bundle.min.js"></script>
+<script defer="" src="script.js"></script>
+</head>
+<body>
+
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+
+<header class="site-header py-4">
+<div class="container">
+<h1>Web Technologies</h1>
+<p class="tagline">Exploring the history, development, and evolution of the World Wide Web</p>
+<button aria-pressed="false" class="btn btn-outline-light" data-js-controls="" id="theme-button" type="button">Dark mode</button>
+</div>
+</header>
+
+
+<nav aria-label="Main navigation" class="container pt-3"><div aria-label="Website sections" class="nav nav-pills gap-2" id="web-tabs" role="tablist"><button aria-controls="history" aria-selected="true" class="nav-link active" data-bs-target="#history" data-bs-toggle="pill" id="history-tab" role="tab" type="button">History</button>
+<button aria-controls="explorer" aria-selected="false" class="nav-link" data-bs-target="#explorer" data-bs-toggle="pill" id="explorer-tab" role="tab" type="button">Explorer</button>
+<button aria-controls="timeline" aria-selected="false" class="nav-link" data-bs-target="#timeline" data-bs-toggle="pill" id="timeline-tab" role="tab" type="button">Timeline</button>
+<button aria-controls="media-section" aria-selected="false" class="nav-link" data-bs-target="#media-section" data-bs-toggle="pill" id="media-section-tab" role="tab" type="button">Media</button>
+<button aria-controls="javascript" aria-selected="false" class="nav-link" data-bs-target="#javascript" data-bs-toggle="pill" id="javascript-tab" role="tab" type="button">JavaScript</button>
+<button aria-controls="references" aria-selected="false" class="nav-link" data-bs-target="#references" data-bs-toggle="pill" id="references-tab" role="tab" type="button">References</button></div><a class="btn btn-outline-secondary mt-3" href="nostalgia-tech.html">Try the nostalgia form</a></nav>
+<noscript>
+<div class="alert alert-warning" role="alert">
+<p><strong>Note:</strong> JavaScript is currently disabled in your browser. You can still read the history sections, but searches and demonstrations need JavaScript.</p>
+</div>
+</noscript>
+
+<main class="container py-4 tab-content" id="main-content" tabindex="-1">
+
+
+<section aria-labelledby="history-tab" class="content-section p-3 p-md-4 mb-4 tab-pane active" id="history" role="tabpanel" tabindex="0">
+<h2>How web browsers developed</h2>
+<p class="lead-text">
+                Web browsers developed alongside the World Wide Web. In <time datetime="1989">1989</time>, 
+                Tim Berners-Lee proposed the Web at CERN to help researchers share information. By late <time datetime="1990">1990</time>, he built the first web server and browser, called <em>WorldWideWeb</em>.
+            </p>
+<div class="row g-3">
+<div class="col-md-4"><article class="card h-100"><div class="card-body">
+<h3>CERN and the early Web</h3>
+<p>
+                        The first browser was developed on a NeXT computer and allowed people to follow links between documents. In <time datetime="1993-04-30">April 1993</time>, CERN made the World Wide Web technology available on a royalty-free basis. This allowed people to use and develop the technology without paying licence fees (CERN, n.d.).
+                    </p>
+</div></article></div>
+<div class="col-md-4"><article class="card h-100"><div class="card-body">
+<h3>Mosaic: images alongside text</h3>
+<p>
+                        Mosaic was released in <time datetime="1993">1993</time> when Marc Andreessen and Eric Bina developed <strong>NCSA Mosaic</strong>. By displaying images alongside text, Mosaic helped make the Web easier to use and more popular (NCSA, n.d.).
+                    </p>
+</div></article></div>
+<div class="col-md-4"><article class="card h-100"><div class="card-body">
+<h3>Netscape &amp; The Browser Wars</h3>
+<p>
+                        Netscape Navigator followed in <time datetime="1994">1994</time>, and quickly became popular. Its competition with Microsoft's Internet Explorer became known as the "browser wars". During this period, browsers added features and support for technologies such as JavaScript and CSS (Mozilla, n.d.).
+                    </p>
+</div></article></div>
+</div>
+
+
+<aside class="callout-box p-3 border-start border-4 rounded">
+<h3>Did You Know?</h3>
+<p>
+                    JavaScript was created in <mark>just 10 days</mark> in May 1995 by Brendan Eich at Netscape Communications. It was initially named Mocha, then LiveScript, and finally renamed JavaScript to link its name with the popularity of Java.
+                </p>
+</aside>
+</section>
+
+
+<section aria-labelledby="explorer-tab" class="content-section p-3 p-md-4 mb-4 bg-body border rounded-3 tab-pane" id="explorer" role="tabpanel" tabindex="0">
+<h2>Explore a browser or web technology</h2>
+<p>
+                Look up summaries of web technologies, browsers, and pioneers on Wikipedia. Choose a featured topic or enter an article name. If the lookup fails, an error message explains what to try next.
+            </p>
+
+<form class="api-form" id="api-search-form" novalidate="">
+<div class="row g-3">
+<div class="mb-3 col-md-8">
+<label class="form-label" for="tech-search-input">Browser or technology</label>
+<div class="input-with-button">
+<input aria-describedby="search-hint api-status" autocomplete="off" class="form-control" id="tech-search-input" list="popular-browsers" minlength="2" name="techQuery" placeholder="E.g. Netscape Navigator, Tim Berners-Lee, CSS..." required="" type="search"/>
+<datalist id="popular-browsers">
+<option value="WorldWideWeb">
+<option value="NCSA Mosaic">
+<option value="Netscape Navigator">
+<option value="Internet Explorer">
+<option value="Mozilla Firefox">
+<option value="Google Chrome">
+<option value="Safari (web browser)">
+<option value="Opera (web browser)">
+<option value="Tim Berners-Lee">
+<option value="Brendan Eich">
+<option value="JavaScript">
+<option value="Cascading Style Sheets">
+</option></option></option></option></option></option></option></option></option></option></option></option></datalist>
+<button class="btn btn-primary" id="btn-api-search" type="submit">
+<span class="btn-text">Search Wikipedia</span>
+</button>
+</div>
+<small class="form-text" id="search-hint">Enter an article name, such as JavaScript, or choose a suggestion.</small>
+</div>
+<div class="mb-3 col-md-4">
+<label class="form-label" for="preset-select">Try a featured topic</label>
+
+<select class="form-select" id="preset-select" name="preset">
+<option value="">Choose a topic</option>
+<option value="Tim_Berners-Lee">Pioneer: Tim Berners-Lee</option>
+<option value="WorldWideWeb">1990: WorldWideWeb Browser</option>
+<option value="Mosaic_(web_browser)">1993: NCSA Mosaic</option>
+<option value="Netscape_Navigator">1994: Netscape Navigator</option>
+<option value="Internet_Explorer">1995: Internet Explorer</option>
+<option value="Mozilla_Firefox">2004: Mozilla Firefox</option>
+<option value="Google_Chrome">2008: Google Chrome</option>
+<option value="Brendan_Eich">Creator: Brendan Eich (JS)</option>
+<option value="Cascading_Style_Sheets">Standard: CSS History</option>
+</select>
+</div>
+</div>
+</form>
+
+
+<div aria-live="polite" class="status-banner" id="api-status" role="status"></div>
+
+<div class="api-results-wrapper" id="api-results-container">
+<p class="explorer-empty">Start with a featured topic, such as Tim Berners-Lee or NCSA Mosaic.</p>
+</div>
+</section>
+
+
+<section aria-labelledby="timeline-tab" class="content-section p-3 p-md-4 mb-4 tab-pane" id="timeline" role="tabpanel" tabindex="0">
+<h2>Milestones in Browser Development</h2>
+<p>Filter the milestones below in real-time using instant client-side table searching:</p>
+<div class="filter-box" data-js-controls="">
+<label for="browser-filter">Filter table by browser, year, or developer:</label>
+<input class="form-control" id="browser-filter" placeholder="For example: Mosaic, 1995, or Microsoft" type="search"/>
+<p aria-live="polite" class="filter-count" id="filter-status"></p>
+</div>
+<div aria-label="Browser timeline table with horizontal scrolling support" class="table-responsive border rounded" role="region" tabindex="0">
+<table class="table table-striped table-hover align-middle mb-0">
+<caption>Key chronological milestones in the evolution of web browsers</caption>
+<thead>
+<tr>
+<th scope="col">Browser Name</th>
+<th scope="col">Launch Year</th>
+<th scope="col">Primary Developer / Organization</th>
+<th scope="col">Major Historical Contribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WorldWideWeb</strong></td>
+<td><time datetime="1990">1990</time></td>
+<td>Tim Berners-Lee (CERN)</td>
+<td>First web browser and WYSIWYG hypertext editor.</td>
+</tr>
+<tr>
+<td><strong>NCSA Mosaic</strong></td>
+<td><time datetime="1993">1993</time></td>
+<td>NCSA (Marc Andreessen &amp; Eric Bina)</td>
+<td>First widespread browser displaying inline images.</td>
+</tr>
+<tr>
+<td><strong>Netscape Navigator</strong></td>
+<td><time datetime="1994">1994</time></td>
+<td>Netscape Communications</td>
+<td>Pioneered JavaScript, cookies, and modern web interaction.</td>
+</tr>
+<tr>
+<td><strong>Internet Explorer</strong></td>
+<td><time datetime="1995">1995</time></td>
+<td>Microsoft</td>
+<td>Bundled with Windows; dominated market during early 2000s.</td>
+</tr>
+<tr>
+<td><strong>Mozilla Firefox</strong></td>
+<td><time datetime="2004">2004</time></td>
+<td>Mozilla Foundation</td>
+<td>Championed open-source standards and tabbed browsing.</td>
+</tr>
+<tr>
+<td><strong>Google Chrome</strong></td>
+<td><time datetime="2008">2008</time></td>
+<td>Google</td>
+<td>Introduced V8 JavaScript engine and multiprocess tab architecture.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+
+<section aria-labelledby="media-section-tab" class="content-section p-3 p-md-4 mb-4 tab-pane" id="media-section" role="tabpanel" tabindex="0">
+<h2>Videos and images</h2>
+<div class="row g-4">
+<div class="col-lg-6"><div class="card h-100 p-3">
+<h3>The evolution of web apps</h3>
+<p>Watch Dylan Beattie explain how web apps have changed:</p>
+<div class="ratio ratio-16x9">
+
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/a_1cV7hg5G8" title="The Evolution of Web Apps 1992–2024 by Dylan Beattie">
+</iframe>
+</div>
+</div></div>
+<div class="col-lg-6"><div class="card h-100 p-3">
+<h3>Web technologies illustration</h3>
+<figure>
+<img alt="Illustration of web technologies and connections between clients and servers" class="img-fluid rounded" loading="lazy" src="Image1.png"/>
+<figcaption>Figure 1: An illustration of web technologies and client-server connections.</figcaption>
+</figure>
+</div></div>
+</div>
+</section>
+
+
+<section aria-labelledby="javascript-tab" class="content-section p-3 p-md-4 mb-4 tab-pane" id="javascript" role="tabpanel" tabindex="0">
+<h2>Try some JavaScript</h2>
+<p>
+                Open the sections below for a short explanation, then try the buttons to see JavaScript in action.
+            </p>
+<div class="details-group">
+<details>
+<summary>HTML, CSS and JavaScript</summary>
+<p>
+<strong>HTML</strong> gives a page its structure and content. <strong>CSS</strong> changes how it looks. <strong>JavaScript</strong> makes it respond to actions such as clicking a button.
+                    </p>
+<pre><code>// Citation: Class toggle adapted from W3Schools JS classList:
+document.documentElement.dataset.bsTheme = "dark";</code></pre>
+</details>
+<details>
+<summary>Getting data and updating a page</summary>
+<p>
+                        The <code>fetch()</code> function gets data from an API. JavaScript can then use <code>document.createElement()</code> to add elements and <code>textContent</code> to display the results without reloading the page.
+                    </p>
+<pre><code>// Citation: Fetch API async/await pattern adapted from W3Schools:
+async function loadData(url) {
+    const res = await fetch(url);
+    const data = await res.json();
+    return data;
+}</code></pre>
+</details>
+<details>
+<summary>Using let and const</summary>
+<p>
+                        Use <code>let</code> when a variable needs to be reassigned and <code>const</code> when it does not. Both are limited to the block where they are declared, such as the code inside an <code>if</code> statement.
+                    </p>
+<pre><code>const APP_NAME = "WebTech";
+let userCount = 42;</code></pre>
+</details>
+</div>
+<h3>Try the examples</h3>
+<div class="d-flex flex-wrap gap-2 my-3" data-js-controls="">
+<button class="btn btn-outline-secondary" id="text-demo" type="button">Update Text</button>
+<button class="btn btn-outline-secondary" id="html-demo" type="button">Show formatted text</button>
+<button class="btn btn-outline-secondary" id="calculate-demo" type="button">Calculate a sum</button>
+<button class="btn btn-outline-secondary" id="alert-demo" type="button">Show an alert</button>
+<button class="btn btn-outline-secondary" id="console-demo" type="button">Write to the console</button>
+<button class="btn btn-outline-secondary" id="print-demo" type="button">Print Page</button>
+</div>
+<p aria-live="polite" class="status-banner visible info" id="demo-output">Choose a button above to see what happens.</p>
+</section>
+
+<section aria-labelledby="references-tab" class="content-section p-3 p-md-4 mb-4 tab-pane" id="references" role="tabpanel" tabindex="0">
+<h2>References</h2>
+<ul class="citation-list">
+<li>
+                    CERN (n.d.) <em>A Short History of the Web</em>. Available at: 
+                    <a href="https://home.cern/science/computing/birth-web" rel="noopener noreferrer" target="_blank">https://home.cern/science/computing/birth-web</a>.
+                </li>
+<li>
+                    Mozilla (n.d.) <em>Browser History: Epic power struggles that brought us modern browsers</em>. Available at: 
+                    <a href="https://www.mozilla.org/en-US/firefox/browsers/browser-history/" rel="noopener noreferrer" target="_blank">https://www.mozilla.org/en-US/firefox/browsers/browser-history/</a>.
+                </li>
+<li>
+                    National Center for Supercomputing Applications (NCSA) (n.d.) <em>A Legacy of Innovation</em>. University of Illinois Urbana-Champaign.
+                </li>
+<li>
+                    W3Schools (2026) <em>HTML, CSS, JavaScript, and Web Accessibility Tutorials &amp; References</em>. Available at: 
+                    <a href="https://www.w3schools.com" rel="noopener noreferrer" target="_blank">https://www.w3schools.com</a>.
+                </li>
+<li>
+                    Wikimedia Foundation (2026) <em>Wikipedia REST API Reference</em>. Available at: 
+                    <a href="https://en.wikipedia.org/api/rest_v1/" rel="noopener noreferrer" target="_blank">https://en.wikipedia.org/api/rest_v1/</a>.
+                </li>
+</ul>
+</section>
+</main>
+
+
+<dialog aria-labelledby="modal-title" class="details-dialog" id="details-modal">
+<div class="p-4">
+<button aria-label="Close details" class="modal-close" id="modal-close-btn" type="button">×</button>
+<h3 id="modal-title">Technology details</h3>
+<div id="modal-body"></div>
+</div>
+</dialog>
+
+<footer class="site-footer py-4">
+<div class="container">
+<p>© 2026 Josephine Ashdown | Sheffield Hallam University | Web Technologies (55-709700)</p>
+<p><small>Built with HTML, CSS and JavaScript, with responsive layouts and keyboard controls.</small></p>
+</div>
+</footer>
+<noscript><style>.tab-content > .tab-pane {display:block;} [role=tablist], [data-js-controls] {display:none;}</style></noscript></body>
+</html>

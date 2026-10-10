@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Try a form about your first browser and early memories of the internet." name="description"/>
+<title>Nostalgia Tech | Early web memories</title>
+
+<!-- Bootstrap setup based on W3Schools: https://www.w3schools.com/bootstrap5/bootstrap_get_started.php --><link href="vendor/bootstrap.min.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+
+<script defer="True" src="vendor/bootstrap.bundle.min.js"></script>
+<script defer="" src="script.js"></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header py-4">
+<div class="container">
+<h1>Nostalgia Tech</h1>
+<p class="tagline">Remembering the dial-up sounds, early browsers, and digital experiences we grew up with</p>
+<button aria-pressed="false" class="btn btn-outline-light" data-js-controls="" id="theme-button" type="button">Dark mode</button>
+</div>
+</header>
+
+<nav aria-label="Main navigation" class="container pt-3">
+<div class="d-flex flex-wrap gap-2">
+<a class="btn btn-outline-secondary" href="index.html">Home &amp; History</a>
+<a class="btn btn-outline-secondary" href="index.html#explorer">Live API Explorer</a>
+<a class="btn btn-outline-secondary" href="index.html#timeline">Timeline</a>
+<a aria-current="page" class="btn btn-outline-secondary" href="nostalgia-tech.html">Nostalgia Tech Form</a>
+<a class="btn btn-outline-secondary" href="index.html#javascript">JavaScript Sandbox</a>
+<a class="btn btn-outline-secondary" href="index.html#references">References</a>
+</div>
+</nav>
+<noscript><p class="callout-box p-3 border-start border-4 rounded">Enable JavaScript to try the form. No information will be submitted.</p></noscript>
+<main class="container py-4" id="main-content" tabindex="-1">
+<section class="content-section p-3 p-md-4 mb-4 bg-body border rounded-3">
+<h2>What do you remember about the early Web?</h2>
+<p class="lead-text">
+                Try the form and explore the history of your first browser. This is a student demonstration: your details and memories are not saved or sent. Only your selected browser name is used for the Wikipedia lookup.
+            </p>
+
+
+<form class="styled-form" id="nostalgia-form" novalidate="" onsubmit="return false">
+
+<fieldset class="border rounded p-3 mb-4">
+<legend>Personal Information</legend>
+<div class="row g-3">
+<div class="mb-3 col-md-6">
+<label class="form-label" for="fname">First Name <span aria-hidden="true" class="required-indicator">*</span>:</label>
+<input aria-required="true" autocomplete="given-name" class="form-control" id="fname" maxlength="50" minlength="2" name="fname" placeholder="Your first name" required="" type="text"/>
+<span aria-live="polite" class="validation-message"></span>
+</div>
+<div class="mb-3 col-md-6">
+<label class="form-label" for="email">Email Address <span aria-hidden="true" class="required-indicator">*</span>:</label>
+<input aria-required="true" autocomplete="email" class="form-control" id="email" name="email" placeholder="name@example.co.uk" required="" type="email"/>
+<span aria-live="polite" class="validation-message"></span>
+</div>
+</div>
+</fieldset>
+
+<fieldset class="border rounded p-3 mb-4">
+<legend>Early Web Experience &amp; Tech History</legend>
+<div class="row g-3">
+<div class="mb-3 col-md-6">
+<label class="form-label" for="browser-select">What was the first browser you ever used? <span aria-hidden="true" class="required-indicator">*</span>:</label>
+<select aria-required="true" class="form-select" id="browser-select" name="firstBrowser" required="">
+<option value="">-- Choose First Browser --</option>
+<option value="WorldWideWeb">WorldWideWeb (1990)</option>
+<option value="Mosaic_(web_browser)">NCSA Mosaic (1993)</option>
+<option value="Netscape_Navigator">Netscape Navigator (1994)</option>
+<option value="Internet_Explorer">Internet Explorer (1995)</option>
+<option value="Opera_(web_browser)">Opera Browser (1995)</option>
+<option value="Mozilla_Firefox">Mozilla Firefox (2004)</option>
+<option value="Google_Chrome">Google Chrome (2008)</option>
+<option value="other">Another retro browser</option>
+</select>
+</div>
+<div class="mb-3 col-md-6">
+<label class="form-label" for="year-input">Approximate Year of First Web Access (1990–2015):</label>
+
+<input class="form-control" id="year-input" max="2015" min="1990" name="firstYear" placeholder="E.g. 1996" step="1" type="number"/>
+</div>
+</div>
+
+
+<div class="mb-3">
+<label class="form-label" for="nostalgia-rating">
+                            How nostalgic do you feel about the early Web? (1 = not much, 10 = very nostalgic): 
+                            <strong class="badge-pill" id="rating-output">7 / 10</strong>
+</label>
+<input class="form-range" id="nostalgia-rating" max="10" min="1" name="nostalgiaRating" step="1" type="range" value="7"/>
+</div>
+
+<div class="mb-3">
+<fieldset class="border rounded p-3 mb-3">
+<legend>Which nostalgic technology do you miss the most?</legend>
+<div class="d-grid gap-2">
+<label class="radio-label">
+<input checked="" class="form-check-input" name="techMemory" type="radio" value="dialup"/> Dial-up modem connection sounds
+                                </label>
+<label class="radio-label">
+<input class="form-check-input" name="techMemory" type="radio" value="html-page"/> Writing raw HTML in Notepad
+                                </label>
+<label class="radio-label">
+<input class="form-check-input" name="techMemory" type="radio" value="chat"/> MSN Messenger &amp; IRC chatrooms
+                                </label>
+<label class="radio-label">
+<input class="form-check-input" name="techMemory" type="radio" value="search"/> Early search engines (AltaVista, Yahoo Directory)
+                                </label>
+</div>
+</fieldset>
+</div>
+
+<div class="mb-3">
+<fieldset class="border rounded p-3 mb-3">
+<legend>What did you primarily use the early web for? (Select all that apply)</legend>
+<div class="d-grid gap-2">
+<label class="checkbox-label">
+<input class="form-check-input" name="usage" type="checkbox" value="email"/> Email (Hotmail / Yahoo)
+                                </label>
+<label class="checkbox-label">
+<input class="form-check-input" name="usage" type="checkbox" value="school"/> School &amp; University Research
+                                </label>
+<label class="checkbox-label">
+<input class="form-check-input" name="usage" type="checkbox" value="gaming"/> Flash Games &amp; Online Gaming
+                                </label>
+<label class="checkbox-label">
+<input class="form-check-input" name="usage" type="checkbox" value="forums"/> Discussion Forums &amp; Bulletin Boards
+                                </label>
+</div>
+</fieldset>
+</div>
+</fieldset>
+
+<fieldset class="border rounded p-3 mb-4">
+<legend>Your early web memories</legend>
+<div class="mb-3">
+<div class="label-with-action">
+<label for="memory-text">Share a specific memory or reflection:</label>
+<button class="btn btn-outline-sm" id="memory-prompt-btn" type="button">Need Inspiration? Get Prompt</button>
+</div>
+<p aria-live="polite" class="hint-text" id="memory-hint"></p>
+<textarea aria-describedby="char-count" class="form-control" id="memory-text" maxlength="500" name="memoryText" placeholder="Which websites did you use? What do you remember about going online?" rows="4"></textarea>
+<div aria-live="polite" class="char-counter" id="char-count">0 / 500 characters</div>
+</div>
+<div class="checkbox-consent mb-3">
+<label class="form-label">
+<input aria-required="true" class="form-check-input" id="subscribe-checkbox" name="subscribe" required="" type="checkbox"/>
+<span>I understand this is a demonstration and my contribution will not be saved. <span class="required-indicator">*</span></span>
+</label>
+</div>
+</fieldset>
+
+<div class="d-flex flex-wrap gap-2">
+<button class="btn btn-primary" id="submit-form-btn" type="submit">
+                        Try the form and look up my browser
+                    </button>
+<button class="btn btn-outline-secondary" id="reset-form-btn" type="reset">
+                        Clear Form
+                    </button>
+</div>
+</form>
+
+<div aria-live="polite" class="status-banner" id="form-feedback" role="status"></div>
+
+<div aria-live="polite" class="status-banner" id="browser-lookup-status" role="status"></div>
+<div class="api-results-wrapper" id="browser-historical-card"></div>
+</section>
+
+<aside class="content-section p-3 p-md-4 mb-4 callout-box p-3 border-start border-4 rounded">
+<h3>What early websites can teach us</h3>
+<p>
+                Early websites often loaded over slow dial-up connections. Keeping pages simple and images small helped people use them. These ideas still matter when someone has a slow connection or is browsing on a phone.
+            </p>
+</aside>
+</main>
+<dialog aria-labelledby="modal-title" class="details-dialog" id="details-modal">
+<div class="p-4">
+<button aria-label="Close details" class="modal-close" id="modal-close-btn" type="button">×</button>
+<h3 id="modal-title">Technology details</h3>
+<div id="modal-body"></div>
+</div>
+</dialog>
+
+<footer class="site-footer py-4">
+<div class="container">
+<p>© 2026 Josephine Ashdown | Sheffield Hallam University | Web Technologies (55-709700)</p>
+<p><small>A student form example using HTML, CSS and JavaScript.</small></p>
+</div>
+</footer>
+<noscript><style>.tab-content > .tab-pane {display:block;} [role=tablist], [data-js-controls] {display:none;}</style></noscript></body>
+</html>

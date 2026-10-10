@@ -1,0 +1,49 @@
+Grid, spacing, buttons and forms use Bootstrap classes. */
+
+body { background: #f3f5f8; color: #243044; font-family: Arial, Helvetica, sans-serif; line-height: 1.7; }
+.site-header, .site-footer { background: #201d43; color: white; }
+.site-header h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); margin-bottom: .4rem; }
+.tagline { max-width: 65ch; color: #e0def0; }
+.content-section { background: var(--bs-body-bg); border: 1px solid var(--bs-border-color); border-radius: .75rem; }
+
+
+h2 { font-size: 1.6rem; margin-bottom: 1rem; }
+
+h3 { font-size: 1.2rem; }
+
+p { max-width: 85ch; }
+.nav-pills .nav-link.active, .btn-primary { background: #353063; border-color: #353063; }
+.nav-pills .nav-link { color: #353063; min-height: 44px; }
+.nav-pills .nav-link.active { color: white; }
+.btn-primary:hover { background: #252145; border-color: #252145; }
+.skip-link { position: absolute; left: 1rem; top: -100px; background: white; color: black; padding: .75rem; z-index: 2000; }
+.skip-link:focus { top: 1rem; }
+:focus-visible { outline: 3px solid #087f8c; outline-offset: 3px; }
+.callout-box { background: #eef3fb; border-color: #353063 !important; }
+.form-fieldset legend, legend { font-size: 1.1rem; float: none; width: auto; }
+.radio-label, .checkbox-label { display: flex; align-items: flex-start; gap: .65rem; }
+.form-check-input { flex-shrink: 0; margin-top: .5rem; }
+.input-with-button { display: flex; flex-direction: column; gap: .5rem; }
+.form-hint, .char-counter, figcaption { font-size: .9rem; }
+.status-banner { display: none; }
+.status-banner.visible { display: block; }
+
+.api-card { border: 1px solid var(--bs-border-color); border-radius: .5rem; background: var(--bs-body-bg); }
+.api-card-content { padding: 1.25rem; }
+.api-card-content a, .citation-list a { overflow-wrap: anywhere; }
+
+.form-row > *, .row > * { min-width: 0; }
+.details-group details { padding: 1rem; border: 1px solid var(--bs-border-color); border-radius: .5rem; margin-bottom: .75rem; }
+summary { cursor: pointer; font-weight: bold; }
+
+pre { padding: 1rem; background: #202d40; color: white; border-radius: .5rem; overflow-x: auto; }
+.details-dialog { width: min(650px, calc(100% - 2rem)); border: 1px solid var(--bs-border-color); border-radius: .75rem; background: var(--bs-body-bg); color: var(--bs-body-color); }
+.details-dialog::backdrop { background: rgb(0 0 0 / .6); }
+.modal-close { float: right; border: 0; background: transparent; color: inherit; font-size: 1.5rem; min-width: 44px; min-height: 44px; }
+[data-bs-theme=dark] body { background: #161b24; color: #e6e9ef; }
+[data-bs-theme=dark] .callout-box { background: #252c3e; }
+[data-bs-theme=dark] .nav-pills .nav-link:not(.active) { color: #c9c4f5; }
+[aria-invalid=true] { border-color: #b02a37; }
+@media (min-width: 768px) { .input-with-button { flex-direction: row; } .input-with-button .btn { white-space: nowrap; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+@media print { .tab-content > .tab-pane { display: block !important; } nav, #theme-button, .demo-controls, .form-actions { display:none; } body {background:white; color:black;} }
